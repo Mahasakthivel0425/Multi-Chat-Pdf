@@ -13,8 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Expose the port the app runs on
 EXPOSE 8501
 
-# Define environment variable
+# Define environment variables
 ENV PYTHONUNBUFFERED=1
+ENV HUGGINGFACEHUB_API_TOKEN=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
 
 # Run the application
 CMD ["streamlit", "run", "app.py"]
